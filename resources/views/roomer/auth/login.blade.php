@@ -20,7 +20,7 @@
                             <img src="assets/images/logo-icon.png" alt="logo icon">
                         </div>
                      <div class="card-title text-uppercase text-center py-3"><b>Roomer's </b>Sign In</div>
-                       <form method ="POST" action="{{ route('leaser.login') }}">
+                       <form method ="POST" action="{{ route('roomer.login') }}">
                          @csrf
                           <div class="form-group">
                            <div class="position-relative has-icon-left">

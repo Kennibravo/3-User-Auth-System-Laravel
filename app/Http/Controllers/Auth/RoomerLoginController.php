@@ -5,6 +5,9 @@ namespace Rumi\Http\Controllers\Auth;
 
 use Rumi\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
+use Illuminate\Contracts\Auth\Authenticatable;
+use Illuminate\Support\Facades\Auth;
 
 class RoomerLoginController extends Controller
 {

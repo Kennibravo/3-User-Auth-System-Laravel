@@ -9,4 +9,8 @@ class RoomerController extends Controller
    public function __construct(){
     	$this->middleware('auth:roomer');
     }
+
+    public function getDashboard(){
+    	return view('roomer.dashboard');
+    }
 }

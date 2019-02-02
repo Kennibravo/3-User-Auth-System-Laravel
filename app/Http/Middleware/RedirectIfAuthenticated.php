@@ -20,7 +20,7 @@ class RedirectIfAuthenticated
         switch($guard){
             case 'leaser':
             if (Auth::guard($guard)->check()) {
-            return redirect('leaser.dashboard');
+            return redirect(route('leaser.dashboard'));
         }
             break;
             

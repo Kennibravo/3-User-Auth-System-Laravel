@@ -9,4 +9,8 @@ class LeaserController extends Controller
     public function __construct(){
     	$this->middleware('auth:leaser');
     }
+
+    public function getDashboard(){
+    	return view('leaser.dashboard');
+    }
 }

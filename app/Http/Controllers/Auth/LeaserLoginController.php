@@ -5,6 +5,9 @@ namespace Rumi\Http\Controllers\Auth;
 
 use Rumi\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
+use Illuminate\Contracts\Auth\Authenticatable;
+use Illuminate\Support\Facades\Auth;
 
 class LeaserLoginController extends Controller
 {
@@ -26,7 +29,7 @@ class LeaserLoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = 'leaser.dashboard';
+    protected $redirectTo = 'leaser/dashboard';
 
     /**
      * Create a new controller instance.
