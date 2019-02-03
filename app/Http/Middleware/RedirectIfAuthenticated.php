@@ -26,13 +26,13 @@ class RedirectIfAuthenticated
             
             case 'roomer':
             if (Auth::guard($guard)->check()) {
-            return redirect('roomer.dashboard');
+            return redirect(route('roomer.dashboard'));
         }
             break;
 
             default:
             if (Auth::guard($guard)->check()) {
-            return redirect('user.dashboard');
+            return redirect(route('user.dashboard'));
         }
         }
         

@@ -24,7 +24,7 @@
                          @csrf
                           <div class="form-group">
                            <div class="position-relative has-icon-left">
-                               <label for="email" class="sr-only">Email</label>
+                               <label for="email" class="sr-only">{{ __('E-Mail Address') }}</label>
                                  <input type="email" id="exampleInputUsername" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="Email-Address" name="email" value="{{ old('email') }}" required autofocus>
                                  @if ($errors->has('email'))
                                     <span class="invalid-feedback" role="alert">
