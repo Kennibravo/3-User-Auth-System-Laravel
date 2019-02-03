@@ -10,6 +10,7 @@
         </div>
       </div>
     </footer>
+  </div>
   <!--End footer-->
   
 <!-- Bootstrap core JavaScript-->
@@ -46,3 +47,4 @@
   <!-- Index js -->
   <script src="{{asset('js/index.js') }}"></script>
 </body>
+</html>

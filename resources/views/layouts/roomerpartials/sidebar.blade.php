@@ -18,21 +18,17 @@
             <li><a href="javaScript:void();"><i class="icon-user"></i>  My Profile</a></li>
             <li><a href="javaScript:void();"><i class="icon-settings"></i> Setting</a></li>
       <li>
-
         
-
-
-         <a title="LogOut" href="{{ route('leaser.auth.logout') }}"
+<a title="LogOut" href="{{ route('roomer.auth.logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                                      <i class="icon-power"></i>
                                         {{ __('Logout') }}
                                     </a>
 
-                                    <form id="logout-form" action="{{ route('leaser.auth.logout') }}" method="POST">
+                                    <form id="logout-form" action="{{ route('roomer.auth.logout') }}" method="POST">
                                         @csrf
                                     </form>
-
 
       </li>
       </ul>

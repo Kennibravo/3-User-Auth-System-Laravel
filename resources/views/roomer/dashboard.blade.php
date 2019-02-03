@@ -1,4 +1,4 @@
-@extends('layouts.leaserpartials.leaser_temp');
+@extends('layouts.roomerpartials.roomer_temp');
 
 @section('content')
  <div class="content-wrapper">

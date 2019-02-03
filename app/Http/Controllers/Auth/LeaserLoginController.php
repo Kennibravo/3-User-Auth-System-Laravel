@@ -66,7 +66,7 @@ class LeaserLoginController extends Controller
 
      public function logout()
     {
-        Auth::guard('roomer')->logout();
+        Auth::guard('leaser')->logout();
         return redirect()->route('leaser.auth.login');
     }
 }

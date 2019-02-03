@@ -1,6 +1,8 @@
-@extends('layouts.app')
+@include('layouts.head')
 
- <div id="wrapper">
+
+
+
 
        <div class="card-authentication2 mx-auto my-5">
         <div class="card-group">
@@ -25,7 +27,8 @@
                           <div class="form-group">
                            <div class="position-relative has-icon-left">
                                <label for="email" class="sr-only">Email</label>
-                                 <input type="email" id="exampleInputUsername" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="Email-Address" name="email" value="{{ old('email') }}" required autofocus>
+                                 <input type="email" id="exampleInputUsername email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="Email-Address" name="email" value="{{ old('email') }}" required autofocus>
+                                 njkjjkjjkj
                                  @if ($errors->has('email'))
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('email') }}</strong>
@@ -39,7 +42,7 @@
                           <div class="form-group">
                            <div class="position-relative has-icon-left">
                               <label for="password" class="sr-only">Password</label>
-                              <input type="password" id="exampleInputPassword" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"  placeholder="Password" name="password" required>
+                              <input type="password" id="exampleInputPassword password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"  placeholder="Password" name="password" required>
                               <div class="form-control-position">
                                  @if ($errors->has('password'))
                                     <span class="invalid-feedback" role="alert">
@@ -92,15 +95,9 @@
          </div>
         </div>
     
-     <!--Start Back To Top Button-->
-    <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
-    <!--End Back To Top Button-->
-    
-    <!--start color switcher-->
-   <div class="right-sidebar">
-    <div class="switcher-icon">
-      <i class="zmdi zmdi-settings zmdi-hc-spin"></i>
-    </div>
-    
+     
     
     </div><!--wrapper-->
+
+@include('layouts.footer')
+

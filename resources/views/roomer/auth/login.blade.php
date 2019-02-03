@@ -1,6 +1,6 @@
-@extends('layouts.app')
+@include('layouts.head')
 
- <div id="wrapper">
+
 
        <div class="card-authentication2 mx-auto my-5">
         <div class="card-group">
@@ -102,5 +102,6 @@
       <i class="zmdi zmdi-settings zmdi-hc-spin"></i>
     </div>
     
-    
     </div><!--wrapper-->
+
+@include('layouts.footer')
